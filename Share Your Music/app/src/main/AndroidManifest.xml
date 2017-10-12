@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.laura_seben.sharemusic">
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/image_de_fond"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu.Menu1"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/menu1"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Menu.MenuBibliotheque"
+            android:label="@string/menu_bibliotheque"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Musique.test.MainActivity"
+            android:theme="@style/CustomActionBarTheme"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service android:name="com.example.laura_seben.sharemusic.Musique.test.MusicService" />
+
+
+        <activity
+            android:name=".Connexion.WifiDirectActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/CustomActionBarTheme"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity android:name=".Musique.test.HostPlayer"
+            android:theme="@style/CustomActionBarTheme"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Musique.test.ClientPlayer"
+            android:theme="@style/CustomActionBarTheme"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- Used for transferring files  after a successful connection -->
+        <service android:enabled="true" android:name=".Connexion.FileTransferService" />
+
+    </application>
+
+</manifest>

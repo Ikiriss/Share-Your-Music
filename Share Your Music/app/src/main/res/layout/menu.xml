@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BackgroundStyle"
+    >
+
+    <TextView
+        android:id="@+id/t_menu"
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MenuText"
+        />
+
+    <Button
+        android:id="@+id/ecouter"
+        android:text="Ecouter"
+        android:layout_marginTop="100dp"
+        style="@style/ButtonStyle"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/connexion"
+        android:text="Connexion"
+        style="@style/ButtonStyle"
+        />
+
+    <Button
+        android:text="Bibliothèque"
+        android:id="@+id/bibliotheque"
+        style="@style/ButtonStyle"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/parametre"
+        android:text="Paramètres"
+        style="@style/ButtonStyle"
+        />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BackgroundStyle"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/menu_bibliotheque"
+        android:text="Bibliothèque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MenuText"
+        />
+
+    <Button
+        android:text="Les Playlist"
+        android:id="@+id/b_playlist"
+        android:layout_marginTop="100dp"
+        style="@style/ButtonStyle" />
+
+    <Button
+        android:text="Ajouter une Playlist"
+        android:id="@+id/b_creerplaylist"
+        style="@style/ButtonStyle" />
+
+</LinearLayout>
